@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch , Route } from 'react-router-dom';
-import './Assets/bootstrap/css/bootstrap.css';
+import 'bootstrap/scss/bootstrap.scss';
 import 'bootstrap/js/dist/collapse.js';
 import './App.css';
 
@@ -31,6 +31,7 @@ function App() {
             <Route path="/Publications" component={Publications} />
             <Route path="/Activities" component={Activities} />
             <Route path="/CV" component={CV} />
+            {/* <Route component={NotFound} /> */}
         </Switch>
         <Footer />
       </Router>
